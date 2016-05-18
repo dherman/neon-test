@@ -1,0 +1,13 @@
+[package]
+name = "neon-test"
+version = "0.1.0"
+authors = ["Dave Herman <dherman@mozilla.com>"]
+license = "MIT"
+
+[lib]
+name = "neon_test"
+crate-type = ["dylib"]
+
+[dependencies]
+neon = { version = "0.1", path = "../../neon" }
+neon-sys = { version = "0.1", path = "../../neon/crates/neon-sys" }
